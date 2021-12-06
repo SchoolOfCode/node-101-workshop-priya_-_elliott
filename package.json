@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6533980&assignment_repo_type=AssignmentRepo)\r # Intro to Node",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/SchoolOfCode/node-101-workshop-priya_elliott/issues"
   },
-  "homepage": "https://github.com/SchoolOfCode/node-101-workshop-priya_elliott#readme"
+  "homepage": "https://github.com/SchoolOfCode/node-101-workshop-priya_elliott#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }

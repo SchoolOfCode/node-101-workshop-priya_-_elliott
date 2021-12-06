@@ -1,20 +1,5 @@
-let myCollection = [
-  {
-    name: "School of Code mug",
-    count: 1,
-    whatILike: "It has my cute pixel character on it!"
-  },
-  {
-    name: "School of Code hat",
-    count: 2,
-    whatILike: "An often overlooked fashion accessory"
-  },
-  {
-    name: "School of Code pillow",
-    count: 1,
-    whatILike: "Eat. Sleep. Code. Repeat :)"
-  }
-];
+import myCollection from "./collection.js";
+import chalk from "chalk";
 
 // Try and `console.log` the variable, and then run the file by bringing up the terminal 
 // (navigating to the files directory if you need to)
@@ -35,13 +20,13 @@ function describeItem(item) {
       //  it should log "I have a `name`. Here's what I like about it: `whatILike`".
 
       if (myCollection[i].count == 1) {
-        console.log(`I have a ${item}. Here's what I like about it: ${myCollection[i].whatILike}.`);
+        console.log(`I have a ${chalk.cyan(item)}. Here's what I like about it: ${chalk.green(myCollection[i].whatILike)}.`);
       } else {
 
         // If you have more than one of it, the message should log 
         // "I have `count` `name`s. Here's what I like about them: `whatILike`".
 
-        console.log(`I have ${myCollection[i].count} ${item}'s. Here's what I like about them: ${myCollection[i].whatILike}.`);
+        console.log(`I have ${chalk.yellow(myCollection[i].count)} ${chalk.cyan(item)}'s. Here's what I like about them: ${chalk.green(myCollection[i].whatILike)}.`);
       }
     }
   }
